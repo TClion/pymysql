@@ -18,7 +18,7 @@ def CreateTable(db,cursor):
 #插入
 def Insert(db,cursor):
     sql = """insert into test(name,sex,age) values (%s,%s,%s)"""    #插入数据
-    data = ('张','女','26')
+    data = ('张楠','女','26')
     try:
         cursor.execute(sql,data)
     except Exception as e:
